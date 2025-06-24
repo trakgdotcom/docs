@@ -103,8 +103,8 @@
 	},
 
 	"logo": {
-		"light": "/logo/light.svg",
-		"dark": "/logo/dark.png"
+		"light": "/logo/light-theme-icon.png",
+		"dark": "/logo/dark-theme-icon.png"
 	},
 	"navbar": {
 		"links": [
