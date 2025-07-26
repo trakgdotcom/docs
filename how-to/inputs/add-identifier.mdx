@@ -1,3 +1,30 @@
-# Add Identifier
+By default, Trakg uses the `name`, `id`, or `placeholder` attribute of an `<input>` field to label data on your dashboard.
 
-Content coming soon...
+If none of these are present, Trakg will generate a random identifier, which may lead to messy or unclear data labels.
+
+---
+
+### ✅ Best Practice
+
+To ensure clean and readable analytics:
+
+-   Always add a meaningful `name` attribute to your inputs.
+-   If `name` is missing, provide an `id` or a user-friendly `placeholder`.
+-   Avoid leaving input fields without any identifying attribute.
+
+---
+
+### 📌 Example
+
+```html
+<!-- Good -->
+<input type="email" name="user_email" placeholder="Email Address" />
+
+<!-- OK -->
+<input type="email" id="user-email" />
+
+<!-- Not Recommended (Trakg will auto-generate a label) -->
+<input type="email" />
+```
+
+⚠️ Without a proper identifier, fields may appear as random codes in your dashboard. Use `name`, `id`, or `placeholder` to keep things organized.
